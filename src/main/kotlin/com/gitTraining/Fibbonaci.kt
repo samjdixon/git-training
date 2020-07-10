@@ -1,6 +1,5 @@
 package com.gitTraining
 
-<<<<<<< HEAD
 fun computeFibbonaciNumber(position: Int): Int {
     if (position == 0) return 0
     if (position < 0) {
@@ -17,23 +16,6 @@ fun computeFibbonaciNumber(position: Int): Int {
         val nextFibbonachiNumber = smallFibbonachiNumber + largeFibbonachiNumber
         smallFibbonachiNumber = largeFibbonachiNumber
         largeFibbonachiNumber = nextFibbonachiNumber
-=======
-fun computeFibbonaciNumber(position: Int?): Int {
-    var notNullPosition = position
-    if (notNullPosition == null) {
-        notNullPosition = 1
-    }
-    var i = 1
-    var j = 1
-
-    if (notNullPosition <= 2) return 1
-
-    var currentPosition = 2
-    while (currentPosition < notNullPosition) {
-        val temp = i
-        i = j
-        j += temp
->>>>>>> origin/handle-null
         currentPosition ++
     }
     return largeFibbonachiNumber
