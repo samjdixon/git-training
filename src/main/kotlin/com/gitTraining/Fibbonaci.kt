@@ -15,6 +15,7 @@ fun computeFibbonaciNumber(position: Int, recursion: Boolean = false): Int {
     var largeFibbonachiNumber = 1
 
 
+
     var currentPosition = 2
     while (currentPosition < position) {
         val nextFibbonachiNumber = smallFibbonachiNumber + largeFibbonachiNumber
@@ -42,3 +43,4 @@ fun recursiveFibbonachi(initialPosition: Int, left: Int = 0, right: Int = 1, pos
         return recursiveFibbonachi(initialPosition, right - left, left, position + 1)
     }
 }
+
